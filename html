@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abdel Rahman Alshdaifat | مطوّر ويب</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#eef4ef; --line:#cfdcd2; --ink:#16305a; --text:#223047; --muted:#5d6b7c;
+  --margin:#c8453b; --card:#f9fcf9;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#0f1a17;--line:#22342e;--ink:#9ec3ff;--text:#dce8e2;--muted:#8fa39a;--margin:#e2685e;--card:#14231f}
+}
+:root[data-theme="dark"]{--paper:#0f1a17;--line:#22342e;--ink:#9ec3ff;--text:#dce8e2;--muted:#8fa39a;--margin:#e2685e;--card:#14231f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--text);font-family:"IBM Plex Sans Arabic",Tahoma,sans-serif;line-height:1.9;font-size:17px;
+  background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 35px,var(--line) 35px,var(--line) 36px)}
+main{max-width:720px;margin:0 auto;padding:48px 24px 64px 20px;border-inline-start:2px solid var(--margin);margin-inline-start:max(16px,calc((100vw - 720px)/2));margin-inline-end:auto;background:var(--paper)}
+@media(max-width:760px){main{margin-inline:12px}}
+h1,h2{font-family:"Reem Kufi",Tahoma,sans-serif;color:var(--ink);margin:0}
+h1{font-size:clamp(38px,10.5vw,68px);line-height:1.15;font-weight:700;direction:ltr;text-align:right}
+.role{font-size:20px;color:var(--muted);margin:8px 0 0}
+.lead{margin:28px 0 0;max-width:34em}
+h2{font-size:26px;margin:56px 0 12px;font-weight:700}
+.row{display:grid;grid-template-columns:1fr auto;gap:8px 16px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line)}
+.row h3{margin:0;font-size:19px;font-weight:600;color:var(--text)}
+.row p{margin:2px 0 0;color:var(--muted);font-size:16px;line-height:1.8}
+.tag{font-size:14px;font-weight:600;color:var(--margin);border:1.5px solid var(--margin);border-radius:4px;padding:0 10px;white-space:nowrap;transform:rotate(-2deg)}
+.tag.live{color:var(--ink);border-color:var(--ink)}
+.date{font-size:15px;color:var(--muted);white-space:nowrap;padding-top:2px}
+.en{direction:ltr;unicode-bidi:isolate}
+a{color:var(--ink)}
+a.proj{display:inline-block;margin-top:4px;font-size:15px;font-weight:500;text-underline-offset:4px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--margin);outline-offset:3px;border-radius:4px}
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.skills li{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:0 14px;font-size:16px}
+.contact{display:grid;gap:4px;margin-top:8px}
+.contact a{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--text)}
+.contact b{font-weight:500;color:var(--muted)}
+.contact a:hover{color:var(--ink)}
+footer{margin-top:48px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Abdel Rahman Alshdaifat</h1>
+    <p class="role">مطوّر ويب · الأردن</p>
+    <p class="lead">بنيت تطبيقات ويب بسيطة وسريعة لأصحاب المحلات والمستخدمين في الأردن، من فكرة لحد صفحة شغّالة على الموبايل، وبتتكامل مع أنظمة الدفع المحلية زي CliQ.</p>
+  </header>
+
+  <h2>مشاريع</h2>
+  <section>
+    <div class="row">
+      <div>
+        <h3>سجل الديون</h3>
+        <p>تطبيق ويب لأصحاب المحلات الصغيرة لتسجيل ديون الزبائن ومتابعتها بدل الدفتر الورقي.</p>
+        <a class="proj" href="https://515g.github.io/Cash" target="_blank" rel="noopener">افتح التطبيق</a>
+      </div>
+      <span class="tag live">شغّال</span>
+    </div>
+    <div class="row">
+      <div>
+        <h3>نَسيم</h3>
+        <p>تطبيق طقس من صفحة وحدة، سريع وخفيف ومصمم للموبايل.</p>
+        <a class="proj" href="https://515g.github.io/wither" target="_blank" rel="noopener">افتح التطبيق</a>
+      </div>
+      <span class="tag live">شغّال</span>
+    </div>
+    <div class="row">
+      <div>
+        <h3>نظام كاشير مطعم</h3>
+        <p>مشروع بلغة Java على NetBeans، طبقت فيه نمطي Factory Method وStrategy لإضافة وجبات وطرق دفع جديدة (كاش أو ماستر كارد) بدون تعديل الكود الأساسي. رسمت مخطط UML وبنيته بـ 9 كلاسات، والأسعار بالدينار الأردني.</p>
+        <a class="proj" href="https://github.com/515G/rest" target="_blank" rel="noopener">الكود على GitHub</a>
+      </div>
+      <span class="tag live">مكتمل</span>
+    </div>
+    <div class="row">
+      <div>
+        <h3>مرسول+</h3>
+        <p>تطبيق توصيل طرود بين الأفراد، فيه جهة للزبون وجهة للسائق، مبني على Firebase.</p>
+      </div>
+      <span class="tag">قيد التطوير</span>
+    </div>
+  </section>
+
+  <h2>دورات وشهادات</h2>
+  <section>
+    <div class="row">
+      <div>
+        <h3 class="en">Introduction to Modern AI</h3>
+        <p>أساسيات الذكاء الاصطناعي، وكيف تشتغل نماذج اللغة الكبيرة وطرق التعامل معها. Cisco Networking Academy.</p>
+      </div>
+      <span class="date">مايو 2026</span>
+    </div>
+    <div class="row">
+      <div>
+        <h3 class="en">Data Science Essentials with Python</h3>
+        <p>قراءة وتنظيف البيانات بـ DataFrames، ورسم المخططات بـ Matplotlib، وأساسيات النماذج الخطية. Cisco Networking Academy.</p>
+      </div>
+      <span class="date">مايو 2026</span>
+    </div>
+    <div class="row">
+      <div>
+        <h3 class="en">JavaScript Essentials 1</h3>
+        <p>أساسيات لغة JavaScript، والمتغيرات والتحكم بسير البرنامج والدوال. Cisco Networking Academy مع JS Institute.</p>
+      </div>
+      <span class="date">مايو 2026</span>
+    </div>
+    <div class="row">
+      <div>
+        <h3 class="en">C++ Essentials 1</h3>
+        <p>أساسيات لغة C++ وكتابة برامج بسيطة. Cisco Networking Academy مع C++ Institute.</p>
+      </div>
+      <span class="date">مايو 2026</span>
+    </div>
+    <div class="row">
+      <div>
+        <h3 class="en">AI &amp; Vibe Coding Workshop</h3>
+        <p>ورشة عن مفاهيم الذكاء الاصطناعي وهندسة الأوامر (Prompt Engineering) وبناء مشاريع عملية بمساعدة الذكاء الاصطناعي. Flasha Academy.</p>
+      </div>
+      <span class="date">يونيو 2026</span>
+    </div>
+    <div class="row">
+      <div>
+        <h3>من النظرية للتطبيق: رحلة الرياضيات والفيزياء في بناء الذكاء الاصطناعي</h3>
+        <p>محاضرة مدتها ساعتان، قدمها فريق KPG في جامعة الزرقاء.</p>
+      </div>
+      <span class="date">ديسمبر 2025</span>
+    </div>
+  </section>
+
+  <h2>مهارات</h2>
+  <ul class="skills">
+    <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java</li><li>Python</li><li>C++</li><li>Firebase</li><li>Git &amp; GitHub</li><li>أنماط التصميم (Design Patterns)</li><li>UML</li><li>تصميم للموبايل أولاً</li>
+  </ul>
+
+  <h2>تواصل معي</h2>
+  <div class="contact">
+    <a href="mailto:abdurrahmanb1222@gmail.com"><b>الإيميل</b><span class="en">abdurrahmanb1222@gmail.com</span></a>
+    <a href="https://wa.me/962771206061"><b>واتساب</b><span class="en">0771206061</span></a>
+    <a href="https://github.com/515G"><b>GitHub</b><span class="en">github.com/515G</span></a>
+  </div>
+
+  <footer>الأردن</footer>
+</main>
+</body>
+</html>
